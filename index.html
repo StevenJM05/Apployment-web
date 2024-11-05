@@ -14,22 +14,24 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
         <nav>
+            <div class="logo-text"><strong>Apployment</strong></div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.html"><strong>Inicio</strong></a></li>
+                <li><a href=""><strong>Servicios</strong></a></li>
+                <li><a href="acerca.html"><strong>Acerca de</strong></a></li>
+                <li><a href="#"><strong>Contacto</strong></a></li>
             </ul>
             <div class="logo">
                 <a href="index.html">
                     <div class="logo-container">
                         <img src="img/logoaploy.png" alt="Logo">
-                        <div class="logo-text"><strong>Apployment</strong></div>
                     </div>
                 </a>
             </div>
         </nav>
+       
     </head>
     <style>
         body {
@@ -82,10 +84,9 @@
         }
 
         .nav-links a:hover {
-            color: #2ecc71; 
+            color: purple; 
         }
 
-       
         .floating-image {
             position: fixed;
             right: 60px; 
@@ -93,20 +94,37 @@
             height: 550px; 
             width: auto;
             z-index: 1000; 
-                }
+        }
 
+        .floating-text {
+            position: fixed;
+            right: 500px;
+            bottom: 30%;
+            color: white;
+            font-size: 1.5em;
+            width: 60%; 
+            text-align: left; 
+        }
+
+        
     </style>
 
     <body>
-        <header>
-        </header>
+        <header></header>
 
         <main>
-            <img src="img/imagenflo.png" alt="Imagen flotante" class="floating-image">
-        </main>
+            <img src="img/interfaza.jpeg" alt="Imagen flotante" class="floating-image">
 
-        <footer>
-        </footer>
+            <div class="floating-text">
+                <div class="container">
+                    <h2><strong>¡Conecta con los mejores profesionales de tu comunidad!</strong></h2>
+                    <p><strong>Encuentra expertos en todo tipo de oficios a un clic de distancia. 
+                    Desde reparaciones hasta servicios especializados, descubre perfiles de confianza listos para ayudarte.</strong></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer></footer>
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
