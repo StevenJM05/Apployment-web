@@ -3,10 +3,7 @@
     <head>
         <title>Inicio</title>
         <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -15,24 +12,37 @@
             crossorigin="anonymous"
         />
 
-        <nav>
-            <div class="logo-text"><strong>Apployment</strong></div>
-            <ul class="nav-links">
-                <li><a href="index.html"><strong>Inicio</strong></a></li>
-                <li><a href="suscripciones.html"><strong>Servicios</strong></a></li>
-                <li><a href="acerca.html"><strong>Acerca de</strong></a></li>
-                <li><a href="#"><strong>Contacto</strong></a></li>
-            </ul>
-            <div class="logo">
-                <a href="index.html">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-text" href="#"><strong>Apployment</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><strong>Inicio</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="suscripciones.html"><strong>Servicios</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acerca.html"><strong>Acerca de</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Contacto</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="index.html" class="d-none d-lg-block">
                     <div class="logo-container">
-                        <img src="img/logoaploy.png" alt="Logo">
+                        <img src="img/logoaploy.png" alt="Logo" class="logo-img">
                     </div>
                 </a>
             </div>
         </nav>
-       
     </head>
+
     <style>
         body {
             margin: 0;
@@ -41,23 +51,14 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        nav {
+        .navbar {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 1em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: medium;
         }
 
-        .logo img {
+        .logo-img {
             height: 80px;
             width: auto;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
         }
 
         .logo-text {
@@ -65,35 +66,25 @@
             color: white;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-left: 10px;
         }
 
-        .nav-links {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 1.5em;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: white;
+        .navbar-nav .nav-link {
+            color: white !important;
             font-size: 1.1em;
             transition: color 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: purple; 
+        .navbar-nav .nav-link:hover {
+            color: purple !important;
         }
 
         .floating-image {
             position: fixed;
-            right: 60px; 
+            right: 60px;
             bottom: 10%;
-            height: 550px; 
+            height: 550px;
             width: auto;
-            z-index: 1000; 
+            z-index: 1000;
         }
 
         .floating-text {
@@ -102,28 +93,221 @@
             bottom: 30%;
             color: white;
             font-size: 1.5em;
-            width: 60%; 
-            text-align: left; 
+            width: 60%;
+            text-align: left;
         }
 
-        
+        .navbar-collapse {
+            justify-content: center !important; /* Centrando los enlaces */
+        }
+
+        @media (max-width: 992px) {
+            .floating-image {
+                position: relative;
+                height: 300px;
+                margin: 0 auto;
+                bottom: 0;
+                right: 0;
+            }
+            .floating-text {
+                position: relative;
+                font-size: 1em;
+                text-align: center;
+                width: 100%;
+                padding: 20px;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .floating-image {
+                height: 250px;
+                margin: 0 auto;
+            }
+            .floating-text {
+                font-size: 1em;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .floating-image {
+                height: 200px;
+                margin: 0 auto;
+            }
+            .floating-text {
+                font-size: 0.9em;
+                padding: 5px;
+            }
+            .navbar-brand, .navbar-nav .nav-link {
+                font-size: 1em;
+            }
+        }
+        body {
+            margin: 0;
+            background: radial-gradient(circle, #412c80, black);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1em;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-link:hover {
+            color: purple !important;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: purple !important;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        p {
+            color: white;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        .values {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .value-item {
+            width: 100%;
+            max-width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .value-item h3 {
+            color: #4CAF50;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            width: 100%;
+            max-width: 200px;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .team-member img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member h4 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5em;
+            }
+
+            .navbar-brand, .nav-link {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-img {
+                height: 40px;
+            }
+
+            .nav-link {
+                font-size: 0.9em;
+            }
+
+            .section {
+                margin: 20px 0;
+            }}
     </style>
 
     <body>
         <header></header>
 
-        <main>
-            <img src="img/interfaza.jpeg" alt="Imagen flotante" class="floating-image">
-
-            <div class="floating-text">
-                <div class="container">
+        <main class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 floating-text">
                     <h2><strong>¡Conecta con los mejores profesionales de tu comunidad!</strong></h2>
                     <p><strong>Encuentra expertos en todo tipo de oficios a un clic de distancia. 
                     Desde reparaciones hasta servicios especializados, descubre perfiles de confianza listos para ayudarte.</strong></p>
                 </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <img src="img/interfaza.jpeg" alt="Imagen flotante" class="floating-image">
+                </div>
             </div>
         </main>
-        
+
         <footer></footer>
 
         <script
