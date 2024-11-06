@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Precios - Apployment</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+
+    <nav>
+        <div class="logo-text"><strong>Apployment</strong></div>
+        <ul class="nav-links">
+            <li><a href="index.html"><strong>Inicio</strong></a></li>
+            <li><a href="suscripciones.html"><strong>Servicios</strong></a></li>
+            <li><a href="acerca.html"><strong>Acerca de</strong></a></li>
+            <li><a href="#"><strong>Contacto</strong></a></li>
+        </ul>
+        <div class="logo">
+            <a href="index.html">
+                <div class="logo-container">
+                    <img src="img/logoaploy.png" alt="Logo">
+                </div>
+            </a>
+        </div>
+    </nav>
+   
+</head>
+<style>
+    body {
+        margin: 0;
+        background: radial-gradient(circle, #412c80, black);
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    nav {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: medium;
+    }
+
+    .logo img {
+        height: 80px;
+        width: auto;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-text {
+        font-size: 1.5em;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: purple; 
+    }
+
+    .pricing-container {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 1200px;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.88);
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .price {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #16074c;
+    }
+
+    .card-body h5 {
+        color: #2f1297a5;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1 class="text-center my-4">Nuestros Planes</h1>
+        <p class="text-center mx-auto" style="max-width: 800px;">
+            En Apployment, ofrecemos opciones de precios diseñadas para adaptarse a las necesidades tanto de quienes buscan servicios como de los profesionales que los ofrecen. Selecciona el plan que mejor se ajuste a tu actividad y empieza a aprovechar todas las ventajas de nuestra plataforma.
+        </p>
+    </header>
+
+    <main class="pricing-container container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="price">Gratis</div>
+                        <h5 class="card-title">Plan Freemium</h5>
+                        <p class="card-text">
+                            Ideal para quienes comienzan a promocionar sus servicios. Incluye acceso a un perfil público, la posibilidad de recibir mensajes de clientes interesados, y participación en nuestro sistema de recomendaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="price">$1.99</div>
+                        <h5 class="card-title">Plan Básico</h5>
+                        <p class="card-text">
+                            Ideal para quienes comienzan a promocionar sus servicios. Incluye acceso a un perfil público, la posibilidad de recibir mensajes de clientes interesados, y participación en nuestro sistema de recomendaciones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="price">$3.99</div>
+                        <h5 class="card-title">Plan Profesional</h5>
+                        <p class="card-text">
+                            Perfecto para quienes desean destacar. Con este plan, obtendrás una mayor visibilidad en la plataforma, acceso a estadísticas de visualización de tu perfil, y la opción de agregar certificaciones o logros adicionales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center p-4">
+                    <div class="card-body">
+                        <div class="price">$5.99</div>
+                        <h5 class="card-title">Plan Premium</h5>
+                        <p class="card-text">
+                            Para quienes buscan el máximo potencial de promoción. Incluye todas las ventajas del plan Profesional más una ubicación destacada en los resultados de búsqueda, acceso prioritario a las solicitudes de clientes y soporte personalizado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
